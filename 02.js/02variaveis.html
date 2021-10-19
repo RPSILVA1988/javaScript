@@ -1,0 +1,78 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+</body>
+
+</html>
+
+
+<script>
+
+    /*
+    
+    var - não recomendado, pois "vaza escopo" em estruturas de conrole
+    
+    let -  use quando realmente houver necessidade de altera a variável
+    
+    const - prefira valores imutáveis
+    
+    
+    +********************************************************************+
+    
+    Converte para um tipo em comum, depois compara:
+    
+    ==
+    
+    !=
+    
+    Compara levando em conta também o tipo:
+    
+    ===
+    
+    !==
+    
+    object: compara referência
+    string, number, boolean: compara valor
+    
+    */
+
+    /*
+    let ano = 2016;
+    const puloLinha = "<br><br>"
+
+    document.write("Flávio tem " + (ano - 1977) + " anos");
+    document.write(puloLinha)
+    document.write("Joaquim tem " + (ano - 1996) + " anos");
+    document.write(puloLinha)
+    document.write("Barney tem " + (ano - 1976)) + " anos";
+    document.write(puloLinha)
+    */
+
+    //-----------------------------------------------------------//
+
+    function pularLinha() {
+
+        document.write("<br><br>");
+        document.write("<br>");
+    }
+
+
+    let ano = 2008;
+
+    document.write("Flávio tem " + (ano - 1977) + " anos");
+    pularLinha();
+    document.write("Joaquim tem " + (ano - 1996) + " anos");
+    pularLinha();
+    document.write("Barney tem " + (ano - 1976)) + " anos";
+    pularLinha();
+
+
+
+</script>

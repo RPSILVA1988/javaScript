@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+
+
+/*
+
+var - não recomendado, pois "vaza escopo" em estruturas de conrole
+
+let -  use quando realmente houver necessidade de altera a variável
+
+const - prefira valores imutáveis
+
+
++********************************************************************+
+
+Converte para um tipo em comum, depois compara:
+
+==
+
+!=
+
+Compara levando em conta também o tipo:
+
+===
+
+!==
+
+object: compara referência
+string, number, boolean: compara valor
+
+*/
+
+    
+    let ano = 2021;
+
+    document.write("Flávio tem " + (ano - 1977) + " anos");
+    document.write("<br><br>");
+    
+
+    ano = 2017;
+
+    document.write("RANIELE tem " + (ano - 1988) + " anos");
+    document.write("<br><br>");
+
+//-------------------------------------------------------------------//
+    
+    document.write("<br><br>");
+    document.write("5 vezes 1 é " + 5 * 1+ "<br>");
+    document.write("5 vezes 2 é " + 5 * 2+ "<br>");
+    document.write("5 vezes 3 é " + 5 * 3+ "<br>");
+    document.write("5 vezes 4 é " + 5 * 4+ "<br>");
+    document.write("5 vezes 5 é " + 5 * 5+ "<br>");
+    document.write("5 vezes 6 é " + 5 * 6+ "<br>");
+    document.write("5 vezes 7 é " + 5 * 7+ "<br>");
+    document.write("5 vezes 8 é " + 5 * 8+ "<br>");
+    document.write("5 vezes 9 é " + 5 * 9+ "<br>");
+    document.write("5 vezes 10 é " + 5 * 10+ "<br>");
+    document.write("<br><br>");
+
+//-------------------------------------------------------------------//
+
+let idadeFlavio = 39 //variavel sempre começa com letra minuscula
+const idadeJoaquim = 20;
+let idadeBarney = 41;
+
+const media = (idadeFlavio + idadeJoaquim + idadeBarney)/3;
+
+document.write('A média das idades é ' + Math.round(media)); //Matematica -> Math  e  round serve para arredondar
+document.write("<br><br>");
+
+let nome = "Flávio";
+
+document.write("A idade de " + nome + " é " + idadeFlavio);
+
+</script>
